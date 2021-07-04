@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: holzmi-stud-kufstein/test_bird_requriments
+  branch: main
+  site_domain: stoic-mirzakhani-d07fe5.netlify.app
+
+site_url: https://github.com/holzmi-stud-kufstein/test_bird_requriments
+
+media_folder: "images/uploads"
+
+collections:
+  - name: "Rmd Pages"
+    label: "Rmarkdown"
+    format: "yaml-frontmatter"
+    files:
+      - label: "Index"
+        name: "index"
+        file: "index.Rmd"
+        fields:
+          - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Markdown Pages"
+    label: "markdown"
+    files:
+      - label: "readme"
+        name: "readme"
+        file: "README.md"
+        fields:
+          - {label: "Body", name: "body", widget: "markdown"}
