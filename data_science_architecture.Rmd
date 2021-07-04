@@ -1,0 +1,46 @@
+---
+title: "Bird Classifier Project Data Science Architecture"
+author: "Peter Aichinger-Frankhauser, Jens Barkshat, Robert Bartz, Michael Holzinger, Elias Reckmeyer & Viviane Aicher"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    df_print: paged
+---
+
+# INHALTE laut https://www.notion.so/SE-Portfolio-d319a318fde2409a9fb83f4afee992d8 
+
+# Why is a data science architecture essential for us?
+Data scientists incline to use ad hoc tactics to achieve the goals. We have a lot of creative hacking methods in different programming languages on different machine learning frameworks. 
+We also have complete freedom of choice with programming languages, tools, and frameworks to improve creative thinking and development. However, data scientists must entirely shape their assets before delivery because there can be many pitfalls if they are not. (https://developer.ibm.com/technologies/artificial-intelligence/articles/architectural-thinking-in-the-wild-west-of-data-science/)
+
+# Which data science architecture is the best choice for us?
+Before we can answer this question, we have to explain our project shortly in one sentence.
+The project aims to build a web page where users can upload their bird pictures to classify them.
+For this project goal, we have to meet the following two conditions:
+We need a website where a user can upload his photo.
+We need a model to classify this picture.
+
+# To achieve these conditions, we decided to use the following tools:
+## Tensorflow:
+TensorFlow is an open-source library created by the Google Brain team for numerical computation and large-scale machine learning. TensorFlow bundles together a slew of machine learning and deep learning (aka neural networking) models and algorithms and makes them valuable. (https://www.infoworld.com/article/3278008/what-is-tensorflow-the-machine-learning-library-explained.html)
+
+For the picture classification, we use the VGG16, a Very Deep Convolutional Networks for Large-Scale Image Recognition with 16 weight layers. 
+
+## Streamlit:
+Streamlit is an open-source Python library that makes it easy to create and share custom web apps for machine learning and data science.(https://docs.streamlit.io/en/stable/)
+
+With Streamlit, we can create our interactive environment, and we can create a web app with powerful content for our customers. We can get values from users and change the result interactively according to their inputs. It is very easy to install and create a web app with Streamlit.
+
+## Docker Container:
+Container images become containers at runtime, and in the case of Docker containers - images become containers when they run on Docker Engine. Available for Linux and Windows-based applications, containerized software will always run the same, regardless of the infrastructure. Thus, containers isolate software from its environment and ensure that it works uniformly despite differences between development and staging. (https://www.docker.com/resources/what-container)
+
+Docker uses a client-server architecture. The Docker client talks to the Docker daemon, which does the heavy lifting of building, running, and distributing our Docker containers. (https://docs.docker.com/get-started/overview/#:~:text=Docker%20uses%20a%20client%2Dserver,to%20a%20remote%20Docker%20daemon.)
+
+## Heroku:
+Heroku is a cloud platform that lets us build, deliver, monitor and scale our app. Also, Heroku focuses relentlessly on apps and the developer experience around apps. (https://www.heroku.com/what)
+
+Heroku lets us deploy, run and manage applications written in different programming languages.
+A Heroku application collects source code, perhaps a framework, and some dependency description that instructs a build system as to which additional dependencies do to build and run the application need.
+
+When Heroku receives the application source, it initiates a build of the source application. The build mechanism is typically language-specific, but follows the same pattern, typically retrieving the specified dependencies, and creating any necessary assets (whether as simple as processing style sheets or as complex as compiling code). (https://devcenter.heroku.com/articles/how-heroku-works)

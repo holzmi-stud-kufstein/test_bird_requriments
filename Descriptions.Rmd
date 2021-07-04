@@ -1,0 +1,67 @@
+---
+title: "Bird Classifier Project Description"
+author: "Peter Aichinger-Frankhauser, Jens Barkshat, Robert Bartz, Michael Holzinger, Elias Reckmeyer & Viviane Aicher"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    df_print: paged
+---
+
+# INHALTE laut https://www.notion.so/SE-Portfolio-d319a318fde2409a9fb83f4afee992d8 
+
+# Modellierte Anforderungen (Requirements) 
+## Basierend auf der Zielsetzung des (fiktive/lab/...) Projektes - Das Projekt muss mit einem Softwareprodukt realisierbar sein.
+## Nicht zu viele Requirements, dafür überlegte und begründete Anforderungen.
+## Wie reagiert man auf Änderungen der Requirements?
+
+
+# Data Science Methodology Concept – CRISP-DM
+## Why CRISP-DM
+Besides the respective FH-courses which already gave us an introduction to the process, we also decided to use CRISP-DM relying on an online source (Datascience-PM; https://www.datascience-pm.com/crisp-dm-2/) which summed up pros and cons in a simple fashion. Despite CRISP-DM having been developed specifically for Data Mining Projects it can and has been applied to all sorts projects. Bill Vorhies claims that since data science projects “start with business understanding” and “data that must be gathered, explored, and prepped in some way”, so CRISP-DM is applicable to “even the most advanced of today’s data science activities” (https://www.datasciencecentral.com/profiles/blogs/crisp-dm-a-standard-methodology-to-ensure-a-good-outcome).
+Despite some criticism of being too rigid, it is also possible to employ a more “loose CRISP-DM implementation” (Datascience-PM) which offers flexibility. Looking at the other reasons not to use CRISP-DM – it being documentation heavy, not modern i.e. predating big-data, and not suited for the coordination of bigger projects – we argue that a strong emphasis on documentation would have a positive effect on our learning as part of our first software project. The second and third inhibiting factors don’t apply because we’re not working with big data per se and we are working as a “small, tight-knit team” (Datascience-PM) which CRIPS-DM assumes. 
+
+## CRISP-DM in our project
+
+### Business Understanding
+The first step in our project would be to sit down with the (fictitious) client in form of a workshop, to try to understand how their business works and what they aim to accomplish. What do they expect the project to do for them in the long run, what are possible insights they want to gain, etc. But as mentioned above, we are not in a situation where the client just provides a lot of data and needs us to make sense of it. In fact, the expected outcome is quite clear: the classification of different kinds of birds based on images. It would therefore be more important to us to understand the most likely use cases, e.g. will private persons use the final project to classify birds in their garden (likely cell phone pictures) or are we dealing with a scientific purpose, where better image quality is likely.
+### Data Understanding
+It is necessary to establish an idea of the characteristics of what the pictures uploaded in the final product (by the user) will look like. What image quality can be expected? Which formats? Since we are working with images of birds, it might be that the user uploads cell-phone pictures with only a very small portion of the image displaying the object of interest. Instead of collecting data it should be provided by the client in this case, including expert labels. But in our practical realization of the classifier we work with quite unproblematic and high-quality image from a search engine. It may become necessary to go back to the previous step of the CRISP-DM during this stage.
+### Data Preparation
+Data preparation in our project focusses especially on preparing the images for classification through our ML model. (Preprocessing like reformatting, cropping, resizing, etc.). One very relevant task will be the cleaning of the data. It is possible that not all data provided by the client (or parsed through an image downloader in the real-world scenario) will be labelled by experts or otherwise incorrectly labelled. The client will once again be included in this process to ensure quality and consolidate expectations.
+### Modeling
+The modeling technique of choice for our classification problem should quite clearly be a convolutional neural network and since the training from scratch would take up too many resources a pre-trained base-model is used. A test design should to be agreed upon with the client and then the training and tweaking begins. Assessment of the model has to be put into relation to the client’s expectations – we’re looking for a good enough model given the resources, not the best possible model.
+### Evaluation
+The evaluation will not include only evaluation metrics of our model and prediction result, but needs to include a test ‘in the field’. Does the project deliver the expected result when employed by users? Are the users (and the client) satisfied when it comes both to result AND usability of the (preliminary) user interface?
+### Deployment
+Deployment in this project will include an approach regarding monitoring and maintenance. and a final report delivered to the customer. It might become necessary to conduct additional model-tuning later on and deploy the updated model or model weights. This might have to do with additional birds that are added to the classification scope or user feedback etc.
+
+# Dataflow
+Schematic of data flow in this project:  
+Client’s sample images -> expert labelling -> additional data collection/delivery by client -> (more expert labelling) -> data cleaning -> checking with experts, agreeing on dataset for modelling -> preprocessing for use in model -> training of model -> evaluation model -> exporting model/weights to use in final product
+Dataflow of image uploaded by user:
+Upload of image -> applying of chosen preprocessing step by user -> saving of image specifics in DB on prediction (including logging)
+
+
+# Diagramme: 
+## z.B. Architektur-Modell, MLOps Stack, ...
+## Entwicklungsmodell (z.B. von Issue/User Story/Use Case zum Deployment)
+
+
+# "Web-Technologien" - beschreiben (integrieren) Sie, wie Ihr System angesprochen wird. 
+## z.B. eine App, mit Server im Hintergrund,
+## z.B. eine Schnittstelle, für andere Webseiten,...
+## Welche Modelle, Datenbanken, Technologien möchte/sollte man einsetzen? Wo/Wie wird gespeichert?
+
+
+# Optional (Architektur) 
+## z.B. Sichten auf Ihr System, Dokumentation wie Ihr System Dokumentiert wurde - bsp. Architekturtapete.
+## Verwenden Sie einen "Monolith" - Client-Server, oder Microservice(s) - oder Eine Mischung aus Skripts und Notebooks? Oder ein Service Mesh? Oder P2P?
+
+
+# Design + Data Science Architektur 
+## Welche Art DS-Architektur würde/könnte passen? Warum? Skizzieren Sie Ansätze oder auch Pipelines
+## Brauchen Sie "Patterns" oder bspw. Refactoring Ihres Projektes?
+
+
+
