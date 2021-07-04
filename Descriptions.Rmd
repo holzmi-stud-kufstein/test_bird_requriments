@@ -6,6 +6,7 @@ output:
     toc: true
     toc_float: true
     df_print: paged
+site: blogdown:::blogdown_site
 ---
 
 # INHALTE laut https://www.notion.so/SE-Portfolio-d319a318fde2409a9fb83f4afee992d8 
