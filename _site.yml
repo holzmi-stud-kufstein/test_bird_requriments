@@ -10,4 +10,4 @@ navbar:
   title: "Bird Classifier Project Data Science Architecture"
   left:
     - text: "Data Science Architectur"
-      href: index.html
+      href: data_science_architecture.html
