@@ -1,11 +1,14 @@
 ---
 title: "Bird Classifier Project Data Science Architecture"
+date: "`r Sys.Date()`"
 author: "Peter Aichinger-Frankhauser, Jens Barkshat, Robert Bartz, Michael Holzinger, Elias Reckmeyer & Viviane Aicher"
 output:
-  html_document:
-    toc: true
-    toc_float: true
-    df_print: paged
+  rmdformats::robobook:
+    self_contained: true
+    thumbnails: true
+    lightbox: true
+    gallery: false
+    highlight: tango
 ---
 
 # INHALTE laut https://www.notion.so/SE-Portfolio-d319a318fde2409a9fb83f4afee992d8 

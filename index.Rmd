@@ -1,7 +1,7 @@
 ---
-title: Edit this wiki with Netlify CMS
+title: "Bird Classifier Requirement Analysis"
 date: "`r Sys.Date()`"
-author: Travis Gerke
+author: "Peter Aichinger-Frankhauser, Jens Barkshat, Robert Bartz, Michael Holzinger, Elias Reckmeyer & Viviane Aicher"
 output:
   rmdformats::robobook:
     self_contained: true
@@ -11,23 +11,150 @@ output:
     highlight: tango
 ---
 
-# Introduction
 
-The [https://www.netlifycms.org](NetlifyCMS) looks really cool. Hope this works!
+# Anforderungen und Aufgaben Lukas Huber:
 
-# Goal
+1. 
+>>>>>>>>>>>>>>>>>
+Finden Sie Veränderungen der Requirements für Ihr System, die
+wahrscheinlich eintreten könnten:
+- Veränderung des Daten-liefernden Systems
+- Mehrere Standorte/Formate/Systeme/Umstände mit denen Ihr System
+umgehen können „soll“/“muss“
+<<<<<<<<<<<<<<<<<
 
-Ideally, we'll end up with a page that is editable by non-git users via Netlify's point-and-click interface.
+2.
+>>>>>>>>>>>>>>>>>><<
+Welche Web-Technologien braucht Ihr Data Science System?
+- z.B. eine App, mit Server im Hintergrund,
+- z.B. eine Schnittstelle, für andere Webseiten,...
+- Welche Modelle, Datenbanken, Technologien möchte/sollte man einsetzen? Wo/Wie wird
+gespeichert?
+<<<<<<<<<<<<<<<<<<
 
-# Code
+3.
+>>>>>>>>>>>>>>>>>>
+- Entwickeln Sie ein einfaches Architekturmodellfür Ihren Use Case!
+- Welche Architektur würden Sie  wählen, warum?
+- Welche Art von Schnittstellen wären notwendig? Welche denkbar? Welche möglich?
+- Wie können Sie „Messaging“ nutzen?
+- Welche Informationen können Sie aus „Log“-Dateien extrahieren?
+- Wie könnten Sie über „Internationalisierung stolpern“ – (nicht nur Kunden aus diversen Ländern)?
+<<<<<<<<<<<<<<<<<
 
-Here's some random `R` code in a block.
+4.
+>>>>>>>>>>>>>>>>>
+- README.md
+- Requirements/
+- my_requirement diagram
+- My_requirement „writing“
+- Architecture/
+- Architecture content
+- Design
+- Design content
+- + Fiktive Umsetzung (z.b. .gitlab-ci.yml, test.py,…)
+- + Verwendung von Git-Versionierung, Branches, Tags.
+<<<<<<<<<<<<<<<<
 
-```
-library(dplyr)
-starwars %>% 
-  filter(species == "Droid")
-```
-# New from Netlify
+5.
+>>>>>>>>>>>>>>>>>>>>>>
+- Entwerfen Sie ihr (hypothetisches) Entwicklungsmodell (Vorgehen) – für Ihr
+Beispiel
+- Beschreiben Sie dazu, wie Sie vorgehen
+- Setzen Sie es ggf. „demonstrativ“ um.
+- Entwerfen Sie die Systemarchitektur (Client-Server, Monolith, Micro?)
+- Modellieren Sie relevante Sichten auf das System
+- Welche Tests sind sinnvoll – schreiben Sie einen (auch fiktiven) Test!
+- Welche Logs sind notwendig? – Beschreiben Sie Beispiele
+- Benötigt ihr Projekt Internationalisierung? Wo?
+- Welche APIs könnten Sie verwenden/anbieten?
+- Welche Design Patterns können Sie Verwenden?
+- Wie könnte eine CI/CD-Pipeline aussehen?
+-Spielen sie die Pipeline für die Entw. Eines Features durch!
+<<<<<<<<<<<<<<<<<<<
 
-Hi!!!
+6. Übernimmt Michael Holzinger
+>>>>>>>>>>>>>>>>>>>
+- Welche Art von Data-Science-Architektur würde für Ihr Projekt passen?
+- Wie könnte diese aussehen?
+- Warum nicht ein anderer Ansatz?
+- Wie könnten Pipelines Verwendung finden?
+<<<<<<<<<<<<<<<<<<<
+
+
+# 1. INTRODUCTION
+
+Ever seen a bird in your garden and wondered what kind of bird it is? 
+Now you can simply let AI classify your bird. Just take a picture of it and upload it to our webpage. The algorithm will tell you what kind of bird it is. (Currently only 3 kinds of birds will be detected).
+
+## 1.1 PURPOSE
+
+The aim of the project is to build a webpage where users can upload their bird pictures in order to classify them.
+At first only three categories of birds will be detected: Great tit, robin and sparrow.
+
+## 1.2 INTENDED AUDIENCE
+
+Everybody who loves nature and has a gitHub account...
+
+## 1.3 INTENDED USE
+
+Just for fun...
+
+## 1.4 SCOPE
+
+Specification including benefits, objectives, and goals.
+
+## 1.5 DEFINITIONS AND ACRONYMS
+
+Risk of false detection, failing upload, wrong picture formats...
+
+
+
+# 2. OVERALL DESCRIPTION
+
+## 2.1 USER NEEDS
+
+
+## 2.2 ASSUMPTIONS AND DEPENDENCIES
+
+
+
+# 3. SYSTEM FEATURES AND REQUIREMENTS
+
+Overview 
+
+## 3.1 FUNCTIONAL REQUIREMENTS
+
+## 3.2 TECHNICAL REQUIREMENTS
+
+## 3.3 QUALITY OF SERVICE REQUIREMENTS
+
+## 3.4 USER INTERFACE REQUIREMENTS
+
+## 3.5 EXTERNAL INTERFACE REQUIREMENTS
+
+## 3.6 EXTERNAL DELIVERABLE/INTERFACE REQUIREMENTS
+
+## 3.7 ACTIVITY REQUIREMENTS
+
+## 3.8 SECURITY REQUIREMENTS
+
+## 3.9 LEGAL & CONTRACT REQUIREMENTS
+
+
+
+# 4. Data Science Methodology
+
+
+# 5. Graphs
+
+
+# 6. Web Technologies
+
+
+# 7. Data Science Architecture
+
+
+# 4. APPROVAL
+
+Approval by key stakeholders is needed after the definition of the requirements.
