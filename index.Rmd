@@ -1,7 +1,7 @@
 ---
-title: Bird Portfolio
+title: Edit this wiki with Netlify CMS
 date: "`r Sys.Date()`"
-author: "Peter Aichinger-Frankhauser, Jens Barkshat, Robert Bartz, Michael Holzinger, Elias Reckmeyer & Viviane Aicher"
+author: Travis Gerke
 output:
   rmdformats::robobook:
     self_contained: true
@@ -10,3 +10,24 @@ output:
     gallery: false
     highlight: tango
 ---
+
+# Introduction
+
+The [https://www.netlifycms.org](NetlifyCMS) looks really cool. Hope this works!
+
+# Goal
+
+Ideally, we'll end up with a page that is editable by non-git users via Netlify's point-and-click interface.
+
+# Code
+
+Here's some random `R` code in a block.
+
+```
+library(dplyr)
+starwars %>% 
+  filter(species == "Droid")
+```
+# New from Netlify
+
+Hi!!!
