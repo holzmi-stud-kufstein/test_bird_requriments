@@ -1,0 +1,12 @@
+---
+title: Edit this wiki with Netlify CMS
+date: "`r Sys.Date()`"
+author: Travis Gerke
+output:
+  rmdformats::robobook:
+    self_contained: true
+    thumbnails: true
+    lightbox: true
+    gallery: false
+    highlight: tango
+---
