@@ -1,0 +1,6 @@
+name: "bird-portfolio"
+navbar:
+  title: "Bird Portfolio"
+  left:
+    - text: "Home"
+      href: index.html

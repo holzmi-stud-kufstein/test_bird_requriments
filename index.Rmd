@@ -1,7 +1,7 @@
 ---
-title: Edit this wiki with Netlify CMS
+title: Bird Portfolio
 date: "`r Sys.Date()`"
-author: Travis Gerke
+author: "Peter Aichinger-Frankhauser, Jens Barkshat, Robert Bartz, Michael Holzinger, Elias Reckmeyer & Viviane Aicher"
 output:
   rmdformats::robobook:
     self_contained: true
