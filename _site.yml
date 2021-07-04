@@ -4,3 +4,10 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+
+name: "Bird-Classifier-Project-Data-Science-Architecture"
+navbar:
+  title: "Bird Classifier Project Data Science Architecture"
+  left:
+    - text: "Data Science Architectur"
+      href: index.html
